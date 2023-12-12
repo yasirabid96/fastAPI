@@ -22,6 +22,8 @@ def create_post(payload: dict=Body(...)):
     print(payload)
     return {"message": "sucessfully created post"}
 
-
-def get_post_by_id(payload):
+def get_post_by_id(payload: dict=Body(...)):
     print(payload)
+    
+def get_post_by_comment(payload: dict=Body(...)):
+    print(payload +"sdsd")
