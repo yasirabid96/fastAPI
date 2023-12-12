@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.params import Body
+from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -24,3 +25,6 @@ def create_post(payload: dict=Body(...)):
 
 def get_post_by_id(payload: dict=Body(...)):
     print(payload)
+    
+    
+    
