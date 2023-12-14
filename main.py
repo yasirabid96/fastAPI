@@ -18,13 +18,10 @@ def get_posts():
     return {"data": "your first post"}
 
 
-@app.post("/createpost")
+@app.post("/posts")
 def create_post(payload: dict=Body(...)):
     print(payload)
     return {"message": "sucessfully created post"}
 
-def get_post_by_id(payload: dict=Body(...)):
-    print(payload)
-    
     
     
